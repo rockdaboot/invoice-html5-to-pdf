@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# (c)2016 by Tim Rühsen
 
 # quit on error
 set -e

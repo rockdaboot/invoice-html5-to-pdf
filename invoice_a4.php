@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * (C)2016 by Tim Rühsen
+ * License: MIT style license, see LICENSE
+ */
+
 class item {
 	public $name;
 	public $description;
