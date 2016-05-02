@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Invoice Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		page { size:A4; margin-left:auto; margin-right:auto; }
+		html { height:100%; }
+		body { margin-left:2.2cm; margin-right:1cm; }
+		table { border-collapse:collapse; border-spacing:0; border:0; width:100%; }
+		th, td { padding:0; }
+		@media print { footer {page-break-after:always; } }
+
+		.foldmark { position:absolute; background-color:black; height:1px; width:3mm; left:4mm; }
+	</style>
+</head>
+<body>
+<div class="foldmark" style="top:35.35%;"></div>
+<div class="foldmark" style="top:70.70%;"></div>
+<div style="width:100%; height:5.1cm; background:url(logo.png) right center no-repeat;"></div>
+<div style="font-size:100%; font-family:Helvetica, sans-serif; float:left; width:100%;">
+	<table>
+	<tr>
+		<td><span style="width:70%; font-size:65%; text-decoration:underline;">Meine GmbH · Meinestraße 1 · 90123 Meinestadt</span><br><br><strong>Empfänger GmbH</strong><br>- Buchhaltung -<br>Foo Straße 55b<br><br>12345 Bar Stadt<br><br>			<br><br><br><br><br>
+		</td>
+		<td style="width:30%; vertical-align:top;">
+			<strong>Meine GmbH</strong><br>Meinestraße 1<br>90123 Meinestadt<br>			<br>
+			<table>
+				<tr><td><strong>fon</strong></td><td>089-1234-56</td></tr>				<tr><td><strong>fax</strong></td><td>089-1234-99</td></tr>				<tr><td><strong>eml</strong></td><td>info@example.com</td></tr>				<tr><td><strong>www</strong></td><td>www.example.com</td></tr>			</table>
+		</td>
+	</tr>
+	</table>
+
+	<table>
+	<tr>
+		<td style="font-size: 100%; font-weight: bold;">
+			Rechnung RE/test/1		</td>
+		<td style="text-align:right; font-size: 90%;">
+			Meinestadt, den 02.05.2016		</td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border-bottom: 1px solid #000;">
+			<br>
+			KundenNr.: 777<br>
+			Zeitraum: 010416-300416<br>
+			<br><br>
+		</td>
+	</tr>
+	</table>
+
+	<table>
+	<tr style="font-weight: bold;">
+		<td style="width:15%;">Artikel</td>
+		<td style="width:45%;">Beschreibung</td>
+		<td style="width:10%; text-align:right;">Menge</td>
+		<td style="width:15%; text-align:right;">Einzelpreis</td>
+		<td style="width:15%; text-align:right;">Preis</td>
+	</tr>
+	<tr>
+		<td colspan="5" style="border-top:1px solid #000;">&nbsp;</td>
+	</tr>
+
+		<tr>
+		<td>Admin</td>
+		<td>DB Einrichtung, Aufwand in h</td>
+		<td style="text-align:right;">6,50</td>
+		<td style="text-align:right;">63,00 €</td>
+		<td style="text-align:right;">409,50 €</td>
+	</tr>
+		<tr>
+		<td>Beratung</td>
+		<td>telefonische Beratung in h</td>
+		<td style="text-align:right;">3,00</td>
+		<td style="text-align:right;">50,00 €</td>
+		<td style="text-align:right;">150,00 €</td>
+	</tr>
+	
+	<tr>
+		<td colspan="5" style="border-bottom:1px solid #000;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="5">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="4" style="text-align:right;">Nettobetrag</td>
+		<td style="text-align:right;">559,50 €</td>
+	</tr>
+	<tr>
+		<td colspan="4" style="text-align:right;">Umsatzsteuer 19%</td>
+		<td style="text-align:right;">106,31 €</td>
+	</tr>
+	<tr>
+		<td colspan="5" style="border-bottom: 1px solid #000;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="5">&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="4" style="text-align:right; font-weight:bold;">Rechnungsbetrag</td>
+		<td style="text-align:right; font-weight:bold;">665,81 €</td>
+	</tr>
+	</table>
+
+	<br><br><br>
+
+	<table>
+	<tr>
+		<td style="font-weight:bold;"><u>Hinweise</u></td>
+	</tr>
+	<tr>
+		<td>
+			<br>
+			Der Rechnungsbetrag ist zahlbar innerhalb 14 Tagen ohne Abzug.<br>
+			Irrtum und Änderungen vorbehalten. Es gelten unsere AGB.<br><br><br>
+			Vielen Dank für Ihren Auftrag.
+		</td>
+	</tr>
+	</table>
+
+	<footer style="position:fixed; bottom:5mm; left:0; font-size: 70%; font-weight: bold; text-align: center; width: 100%; vertical-align:bottom;">
+		Geschäftsführer Rha Barber · HRB 00000 · Amtsgericht Meinestadt · USt-IdNr. DE 000 000 000<br>Sparkasse Meinestadt · IBAN DE00 0000 0000 0000 0000 00 · BIC ABCDEF99XXX	</footer>
+</div>
+</body>
+</html>
