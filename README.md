@@ -1,5 +1,5 @@
 Create your PDF invoices from a HTML5 template
-##############################################
+==============================================
 
 I wanted to create PDF invoices from a (Linux) command line without
 installing a CMS. Just with data from my database tables.
@@ -14,8 +14,8 @@ for non-programmers, no need to create and fill PDF Forms, just using
 web standards.
 
 I found plenty of examples on the web, they all failed in one or the other
-way. It took a while to figure out all the details until I had a satisfying
- - but yet not perfect - result.
+way. It took a while to figure out all the details until I had a
+satisfying - but yet not perfect - result.
 
 I share this with you in the hope that it helps you to save some time.
 
@@ -28,8 +28,8 @@ View the PDF `out.pdf` by clicking on it.
 What I use
 ----------
 
-I work with a Linux command line (Debian SID) and just installed
-`wkhtmltopdf` and `php5` (`sudo apt-get install wkhtmltopdf php5`).
+I work with a GNU/Linux command line (Debian SID) and just installed
+`wkhtmltopdf` 0.12.3.2 and `php5` 5.6.20 (`sudo apt-get install wkhtmltopdf php5`).
 
 To generate the PDF, just execute `./genpdf.sh`, which creates a
 `out.pdf` using `php5` and `wkhtmltopdf`. This shell script is very
